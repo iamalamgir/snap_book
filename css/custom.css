@@ -1,0 +1,646 @@
+/***** Snap-Book *****/ 
+/* start body */
+body {
+    background: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #4d4f56;
+    font-weight: 400;
+}
+
+/* start loading */
+#loading {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    background-color: #fff;
+    z-index: 99;
+}
+
+#loading-image {
+    z-index: 100;
+}
+
+/* end loading */
+
+
+/* start nav */
+.top-logo-image {
+    height: 60px;
+    width: auto;
+}
+
+.navbar-vertical .navbar-brand-img,
+.navbar-vertical .navbar-brand>img {
+    max-width: 100%;
+    max-height: 60px;
+}
+
+.navbar {
+    box-shadow: 0px 1px 1px rgb(160 156 156 / 10%);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    padding: 10px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: #444444;
+    display: block;
+    position: relative;
+}
+
+.nav-link:hover,
+a:hover {
+    color: var(--secondary-color) !important;
+}
+
+.btn-theme {
+    background: var(--primary-color);
+    border-radius: 3px;
+    color: #fff !important;
+    padding: 8px 15px;
+}
+
+.btn-theme:hover {
+    color: var(--secondary-color) !important;
+    background: #ffffff;
+    border: 1px solid var(--primary-color);
+}
+
+span {
+    color: var(--primary-color);
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    color: #25282b;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* end nav */
+
+
+/* start slider-banner */
+.slider {
+    background: #f8f9fa;
+}
+
+.slider-img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+/* start slider-banner */
+
+
+/* start food-truck */
+.cart-section,
+.success-section,
+.footer-section,
+.home-section,
+.order-track-section {
+    padding: 60px 0px;
+}
+
+.homee .takeaway-card {
+    min-height: 300px;
+}
+
+.title-area {
+    text-align: center;
+}
+
+.home-page h4 {
+    font-size: 40px;
+    padding-bottom: 20px;
+    font-weight: 800;
+}
+
+.home-page p {
+    font-size: 25px;
+    font-style: italic;
+    margin-bottom: 0px;
+}
+
+.takeaway-card {
+    background: #f9f9f9;
+}
+
+.takeaway-card:hover {
+    background: var(--primary-color);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.takeaway-icon:hover {
+    color: #ffffff;
+}
+
+.takeaway-card h5 {
+    color: #263238;
+}
+
+.takeaway-card img {
+    width: 65px;
+}
+
+.takeaway-card .card-title {
+    font-size: 18px;
+    padding-top: 15px;
+}
+
+.takeaway-card {
+    background: #f9f9f9;
+    height: 200px;
+    padding-top: 10px;
+}
+
+.takeaway-card {
+    max-height: 165px;
+}
+
+.learn-more {
+    color: #263;
+}
+
+.learn-more:hover {
+    color: red !important;
+}
+
+/* end food-truck */
+
+/* start benefits */
+/* end benefits */
+
+/* start features */
+.feature-block {
+    min-height: 390px;
+    border: 1px solid #dee2e6;
+    margin-bottom: 12px;
+    padding-top: 26px;
+    margin-top: 20px;
+}
+
+.product-image {
+    padding: 8px;
+    width: 100px;
+}
+
+.product-content {
+    padding-right: 5px;
+    padding-left: 5px
+}
+
+/* .learn1 {
+    margin-top: 0px !important;
+    color: red;
+}
+.learn2 {
+    height: 50px;
+    color: red;
+}
+.learn3 {
+    padding-top: 80px;
+    color: red;
+}
+.learn4 {
+    margin-top: 80px !important;
+    color: red;
+}
+.learn5 {
+    padding-top: 50px;
+    color: red;
+} */
+
+/* end features */
+
+/* start packages */
+.card {
+    min-height: 450px;
+}
+
+.package-area ul {
+    list-style-type: square !important;
+    text-align: left !important;
+}
+
+.package-title {
+    padding-top: 12px;
+    font-weight: 700;
+}
+
+/* end packages */
+
+/* start feedback */
+/* end feedback */
+
+/* start footer */
+.footer-section {
+    background: #252525;
+    padding: 60px 0px;
+}
+
+.footer-section h5 {
+    color: #f7f7f7;
+}
+
+.footer-section ul {
+    padding: 0px;
+    color: #9da4a8;
+}
+
+.footer-section a {
+    color: #f1f1f1;
+}
+
+.footer-section p {
+    color: #7a8a9c;
+}
+
+.aboutsize {
+    font-size: 16px;
+}
+
+/* end footer */
+
+/* start footer top-btn */
+.top-btn {
+    all: unset;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    transform: scale(1.8);
+    opacity: 0;
+    transition: .3s;
+    background: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 6px 10px;
+    border-radius: 1px;
+}
+
+.top-btn:hover {
+    background: var(--secondary-color) !important;
+    color: #ffffff !important;
+}
+
+/* end footer top-btn */
+
+/***** strat About.index.html *****/
+/* start about-us bg-banner */
+.bg-banner-only {
+    background-image: url("/images/small_banner.jpg") !important;
+    background: #F7F7F7;
+    height: 150px
+}
+
+.breadcrumb {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 23px 0px;
+    margin-bottom: 1rem;
+    list-style: none;
+    background-color: #f7f7f7;
+    border-radius: 0.25rem;
+}
+
+.breadcrumb {
+    float: right;
+}
+
+.bg-light {
+    background-color: #ffffff !important;
+}
+
+.bg-danger {
+    background-color: var(--secondary-color) !important;
+}
+
+.bg-banner-only .breadcrumb {
+    float: right;
+    background: transparent !important;
+    line-height: 80px;
+}
+
+.bg-banner-only .page-top-title {
+    color: #ffffff;
+    font-size: 40px;
+    padding-top: 40px;
+}
+
+.bg-banner-only .breadcrumb-item,
+.active {
+    color: #949393 !important;
+}
+
+.bg-light-red {
+    background: #f8f9fa;
+}
+
+.bg-banner-only {
+    max-height: 100px;
+}
+
+.bg-banner-only .page-top-title {
+    font-size: 33px;
+    padding-top: 20px;
+}
+
+.bg-banner-only .breadcrumb {
+    line-height: 40px;
+}
+
+.bg-banner-only .breadcrumb-item,
+.active {
+    color: #f1e9e9 !important;
+    font-size: 9px;
+}
+
+.bg-banner-only .page-top-title {
+    font-size: 25px;
+}
+
+.breadcrumb-item a {
+    color: #ffffff;
+}
+
+.page-top-title {
+    padding-top: 25px;
+}
+
+/* end about-us bg-banner */
+
+/* start success-section */
+.success-icon {
+    margin: 0 auto;
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    line-height: 75px;
+    font-size: 24px;
+    color: var(--primary-color);
+    background: #f9e7eb;
+}
+
+.img-thumbnail {
+    padding: 0px;
+    border: 1px solid #dee2e6;
+}
+
+.cart-table .img-thumbnail {
+    padding: 0px;
+    border: 1px solid #dee2e6;
+    position: absolute;
+    left: 20px;
+}
+
+.content-padding {
+    padding: 25px 0px;
+}
+
+/* end success-section */
+/***** end About.index.html *****/
+
+/***** strat registration index.html *****/
+.customer-info {
+    background: #ffffff;
+}
+
+.customer-info label {
+    padding: 5px 10px 1px 0px;
+}
+
+.btn-danger {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.btn-danger {
+    border-color: var(--primary-color);
+}
+
+.btn-danger:hover {
+    color: var(--primary-color);
+    background-color: #ffffff;
+    border-color: var(--primary-color);
+}
+
+.form-control {
+    height: auto;
+    padding: 12px 15px;
+    border-radius: 3px;
+    background-color: transparent;
+    border: 1px solid #ededed;
+}
+
+/***** end registration index.html *****/
+
+/* end body */
+
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /* start features */
+/* .feature-block {
+    height: 370px;
+    border: 1px solid #dee2e6;
+    margin-bottom: 12px;
+    padding-top: 26px;
+    margin-top: 20px;
+}
+
+.product-image {
+    padding: 8px;
+    width: 115px;
+}
+
+.product-content {
+    padding-right: 50px;
+    padding-left: 10px
+} */
+
+/* end features */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 992px) {
+    /* start features */
+/* .feature-block {
+    height: 370px;
+    border: 1px solid #dee2e6;
+    margin-bottom: 12px;
+    padding-top: 26px;
+    margin-top: 20px;
+}
+
+.product-image {
+    padding: 8px;
+    width: 115px;
+}
+
+.product-content {
+    padding-right: 50px;
+    padding-left: 10px
+} */
+
+/* end features */
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) {
+    /* start features */
+    /* #dee2e6; */
+/* .feature-block {
+    height: 370px;
+    border: 1px solid #534; 
+    margin-bottom: 12px;
+    padding-top: 26px;
+    margin-top: 20px;
+}
+
+.product-image {
+    padding: 8px;
+    width: 115px;
+}
+
+.product-content {
+    padding-right: 50px;
+    padding-left: 10px
+} */
+
+/* end features */
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /* start body */
+
+    /* start loading */
+    /* end loading */
+
+
+    /* start nav */
+    /* end nav */
+
+
+    /* start slider-banner */
+    /* start slider-banner */
+
+
+    /* start food-truck */
+    .homee .takeaway-card {
+        margin-bottom: 25px;
+    }
+
+    .takeaway-card h5 {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .takeaway-card p {
+        font-size: 13px;
+    }
+
+    .takeaway-card .card-title {
+        font-size: 16px;
+        padding-top: 5px;
+    }
+
+    .takeaway-card img {
+        width: 50px;
+    }
+
+    /* end food-truck */
+
+    /* start benefits */
+    /* end benefits */
+
+    /* start features */
+    /* .feature-block p {
+        font-size: 5px;
+    } */
+    /* end features */
+
+    /* start packages */
+    /* end packages */
+
+    /* start feedback */
+    /* end feedback */
+
+    /* start footer */
+    /* end footer */
+
+    /* start footer top-btn */
+    /* end footer top-btn */
+
+
+
+    /***** strat About.index.html *****/
+    /* start about-us bg-banner */
+    .bg-banner-only {
+        max-height: 100px;
+    }
+
+    .bg-banner-only .page-top-title {
+        font-size: 33px;
+        padding-top: 20px;
+    }
+
+    .bg-banner-only .breadcrumb {
+        line-height: 40px;
+    }
+
+    .bg-banner-only .breadcrumb-item,
+    .active {
+        color: #f1e9e9 !important;
+        font-size: 9px;
+    }
+
+    .bg-banner-only .page-top-title {
+        font-size: 25px;
+    }
+
+    .bg-banner-only .breadcrumb {
+        visibility: hidden;
+    }
+
+    /* end about-us bg-banner */
+    /***** end About.index.html *****/
+
+    /***** strat registration index.html *****/
+    /***** end registration index.html *****/
+
+    /* end body */
+}

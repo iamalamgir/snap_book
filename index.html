@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon">
+    <meta charset="utf-8">
+    <title>SnapBook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="ajax.googleapis.com/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="../cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
+    <script src="bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="fonts.googleapis.com/index.html">
+    <link rel="preconnect" href="fonts.gstatic.com/index.html" crossorigin>
+    <link
+        href="fonts.googleapis.com/css22638.css?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&amp;family=Roboto:ital,wght@0,100;0,400;0,700;1,100&amp;display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/logo/favicon1649837633.png">
+
+    <style>
+        :root {
+            --primary-color: #FAB758;
+            --secondary-color: #FAB758;
+        }
+    </style>
+
+    <link rel="stylesheet" href="css/custom.css">
+
+    <script src="http://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="ajax.googleapis.com/angularjs/1.6.9/angular.min.js"></script>
+    <script src="js/cart.js"></script>
+
+</head>
+
+<body ng-app="rapp" ng-controller="restaurantController">
+
+    <div id="loading">
+        <img id="loading-image" src="eclipse.gif" alt="Loading..." />
+    </div>
+
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo/logo1649837633.png" class="img-fluid rounded-top top-logo-image" height="60"alt="">
+            </a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="home/about.html">About <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#feature">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#package">Packages</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="home/contact.html">Contact Us</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="">
+                        <a class="btn btn-theme" href="home/registration.html">Membership</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="slider">
+        <img src="images/banner4.jpg" alt="First slide" class="slider-img">
+    </div>
+
+
+    <section class="home-section homee">
+        <div class="container">
+            <div class="title-area home-page">
+                <h4>From <span>Food Truck</span> To
+                    <span> Fine Dining </span>
+                </h4>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-12">
+                    <div class="card takeaway-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-utensils takeaway-icon" style="font-size: 20px;"></i>
+                            <p class="card-title text-bold">Dine In</p>
+                            <p>
+                                Get your own takeaway system so guests can order food straight
+                            </p>
+                            <a href="#dine" data-toggle="collapse" class="learn-more">LEARN MORE</a>
+                            <div id="dine" class="collapse">
+                                <p>
+                                    from your website or facebook page
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="card takeaway-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-luggage-cart takeaway-icon" style="font-size: 20px;"></i>
+                            <p class="card-title text-bold">Take Away</p>
+                            <p>
+                                Let guests order via QR codes! No app, and orders go straight to the
+                            </p>
+                            <a href="#take" data-toggle="collapse" class="learn-more">LEARN MORE</a>
+                            <div id="take" class="collapse">
+                                <p>
+                                    voucher printer and your accounting system.
+                                    They pay with Vipps or their card.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="card takeaway-card">
+                        <div class="card-body text-center">
+
+                            <i class="fas fa-truck-moving takeaway-icon" style="font-size: 20px;"></i>
+                            <p class="card-title text-bold">Delivery</p>
+                            <p>
+                                Let guests order via QR codes! No app, and orders go straight to the
+                            </p>
+                            <a href="#delivery" data-toggle="collapse" class="learn-more">LEARN MORE</a>
+                            <div id="delivery" class="collapse">
+                                <p>
+                                    voucher printer and your accounting system.
+                                    They pay with Vipps or their card.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="home-section bg-light-red">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 mx-auto">
+                    <div class="row">
+                        <div class="col-md-5 col-12">
+                            <img src="images/checf.jpg" width="100%" />
+                        </div>
+                        <div class="col-md-7 col-12">
+                            <div class="title-area home-page">
+                                <p class="text-left">Benefits</p>
+                                <h4 class="text-left">Benefits
+                                    <span>Sales</span> And
+                                    <span> Loyalty</span>
+                                    With Our Online Ordering System
+                                </h4>
+                            </div>
+
+                            <p>
+                                RWA is an online ordering system that ensures an easy and simple ordering process for
+                                restaurants: from takeaway to dine in. With market-leading loyalty features, we help
+                                restaurateurs increase their sales and make their guests come back again, and again, and
+                                again …
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="home-section" id="feature">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="row">
+                        <div class="col-md-7 col-12">
+                            <div class="title-area home-page">
+                                <p class="text-left">Features</p>
+                                <h4 class="text-left">A <span>Dashboard</span>.
+                                    Total Control. Integrated With The
+                                    Accounts
+                                </h4>
+                            </div>
+                            <p>
+                                Have a complete system to deal with, and offer guests Mobile Ordering via QR codes and
+                                take orders from your website. Everything integrated seamlessly into the accounts.
+                            </p>
+                        </div>
+                        <div class="col-md-5 col-12">
+                            <img src="images/dashboard.jpg" width="100%" />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <div class="media feature-block">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object product-image " src="images/ice-icon8.png" alt="...">
+                                    </a>
+                                </div>
+                                <div class="media-body product-content">
+                                    <h5 class="card-title">Pre-Order Takeaway </h5>
+                                    <p>
+                                        Get your own takeaway system so guests can order food straight from your website
+                                        or facebook page
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4">
+                            <div class="media feature-block">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object product-image " src="images/ice-icon8.png" alt="...">
+                                    </a>
+                                </div>
+                                <div class="media-body product-content">
+                                    <h5 class="card-title">QR Order On The Table And Payment With Vipps / Card </h5>
+                                    <p >
+                                        Let guests order via QR codes! No app,  
+                                    </p>
+                                    <a href="#demo1" data-toggle="collapse" class="learn1">LEARN MORE</a>
+                                    <div id="demo1" class="collapse">
+                                        <p>
+                                            and orders go straight to the voucher printer and your accounting system.
+                                            They pay with Vipps or their card.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4 ">
+                            <div class="media feature-block">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object product-image " src="images/ice-icon8.png" alt="...">
+                                    </a>
+                                </div>
+                                <div class="media-body product-content">
+                                    <h5 class="card-title">Easy Menu Editing From Phone / PC </h5>
+                                    <p >
+                                        Change and build your menu in seconds with 
+                                    </p>
+                                    <a href="#demo2" data-toggle="collapse" class="learn2">LEARN MORE</a>
+                                    <div id="demo2" class="collapse">
+                                        <p>
+                                            Tidbit Menu Editor. You can easily add prices, photos,
+                                            discounts descriptions and much more. Right from your own phone!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4">
+                            <div class="media feature-block">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object product-image " src="images/ice-icon8.png" alt="...">
+                                    </a>
+                                </div>
+                                <div class="media-body product-content">
+                                    <h5 class="card-title">Own Colors And Logo </h5>
+                                    <p >
+                                        Get your own takeaway system so guests can order food 
+                                    </p>
+                                    <a href="#demo3" data-toggle="collapse" class="learn3">LEARN MORE</a>
+                                    <div id="demo3" class="collapse">
+                                        <p>
+                                            straight from your website or facebook page.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4">
+                            <div class="media feature-block">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object product-image " src="images/ice-icon8.png" alt="...">
+                                    </a>
+                                </div>
+                                <div class="media-body product-content">
+                                    <h5 class="card-title">24/7 Support</h5>
+                                    <p >
+                                        Change and build your menu in seconds with Tidbit Menu Editor. 
+                                    </p>
+                                    <a href="#demo4" data-toggle="collapse" class="learn4">LEARN MORE</a>
+                                    <div id="demo4" class="collapse">
+                                        <p>
+                                            You can easily add prices, photos, discounts descriptions and much more.
+                                            Right from your own phone!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4">
+                            <div class="media feature-block ">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object product-image " src="images/ice-icon8.png" alt="...">
+                                    </a>
+                                </div>
+                                <div class="media-body product-content">
+                                    <h5 class="card-title">Discount Coupons And Offers</h5>
+                                    <p >
+                                        Let guests order via QR codes! No app, and orders go straight 
+                                    </p>
+                                    <a href="#demo5" data-toggle="collapse" class="learn5">LEARN MORE</a>
+                                    <div id="demo5" class="collapse">
+                                        <p>
+                                            to the voucher printer and your accounting system. They pay with Vipps or their card.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="home-section bg-light-red" id="package">
+        <div class="container">
+            <div class="title-area home-page">
+                <p>Packages</p>
+                <h4>Choose Your <span>Package</span></h4>
+            </div>
+            <div class="row package-area">
+                <div class="col-md-4 col-12">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="images/featured-image/1649837985.webp" style="width: 100%;" alt="">
+
+                            <h5 class="text-center package-title"><a href="#">Starter</a></h5>
+                            <p>7 Days Pack</p>
+                            <span class="price">$2000/ 5 Days</span>
+
+                            <br>
+
+                            <a href="home/registrationec07.html?package_id=1" class="btn btn-theme subscribed-btn1">
+                                Subscribed
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="images/featured-image/1649838338.jpg" style="width: 100%;" alt="">
+
+                            <h5 class="text-center package-title"><a href="#">Monthly</a></h5>
+                            <p></p>
+                            <span class="price">$8000/ 30 Days</span>
+
+                            <br>
+
+                            <a href="home/registrationcee0.html?package_id=3" class="btn btn-theme subscribed-btn2">
+                                Subscribed
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="images/featured-image/1651695259.jpg" style="width: 100%;" alt="">
+
+                            <h5 class="text-center package-title"><a href="#">Pilot Package</a></h5>
+                            <p>For pilot restaurants. They will be providing feedbacks into the system and give relevant
+                                info on potential improvements.</p>
+                            <span class="price">$990/ 150 Days</span>
+
+                            <br>
+
+                            <a href="home/registrationa6f7.html?package_id=4" class="btn btn-theme subscribed-btn3">
+                                Subscribed
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="home-section " style="display: none">
+        <div class="container">
+            <div class="title-area home-page">
+                <p>all.testimonials</p>
+                <h4>Client <span>Feedback</span></h4>
+            </div>
+
+            <div class="row ">
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="images/shapes/33.png" style="width: 100%;" alt="">
+
+                            <h5 class="text-center"><a href="#">Customer 1</a></h5>
+                            <p>This restaurant food is very good</p>
+                            <div class="testi-rating">
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="index.html">
+                        <img src="images/logo/logo1649837633.png" alt="" style="max-height: 90px">
+                    </a>
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Contact &amp; Address</h5>
+                    <ul>
+                        <li>
+                            <i class="fas fa-address-book mr-2"></i>This is the address
+                        </li>
+                        <li>
+                            <i class="fas fa-phone mr-2"></i>123456
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope mr-2"></i>info@rwa.com
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Important Link</h5>
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link aboutsize" href="home/about.html">About <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#feature">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#package">Packages</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="home/contact.html">Contact Us </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 ">
+                    <p>Copyright © 2023 <a href="index.html">SnapBook</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <button class="top-btn"><i class="fas fa-angle-up"></i></button>
+
+    <script src="js/all.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon">
+    <meta charset="utf-8">
+    <title>Restaurant Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="/ajax.googleapis.com/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
+    <script src="/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="/fonts.googleapis.com/index.html">
+    <link rel="preconnect" href="/fonts.gstatic.com/index.html" crossorigin>
+    <link
+        href="/fonts.googleapis.com/css22638.css?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&amp;family=Roboto:ital,wght@0,100;0,400;0,700;1,100&amp;display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/website/logo/favicon1649837633.png">
+
+    <style>
+        :root {
+            --primary-color: #FAB758;
+            --secondary-color: #FAB758;
+        }
+    </style>
+
+    <link rel="stylesheet" href="/css/custom.css">
+
+    <script src="http://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/ajax.googleapis.com/angularjs/1.6.9/angular.min.js"></script>
+    <script src="/js/cart.js"></script>
+
+</head>
+
+<body ng-app="rapp" ng-controller="restaurantController">
+
+    <div id="loading">
+        <img id="loading-image" src="/eclipse.gif" alt="Loading..." />
+    </div>
+
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/images/logo/logo1649837633.png" class="img-fluid rounded-top top-logo-image" height="60"
+                    alt="">
+            </a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/home/about.html">About <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#feature">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#package">Packages</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/home/contact.html">Contact Us</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="">
+                        <a class="btn btn-theme" href="/home/registration.html">Membership</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="bg-banner-only ">
+        <nav aria-label="breadcrumb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <h5 class="page-top-title"> Restaurant Registration</h5>
+                    </div>
+                    <div class="col-md-6 col-6 pull-right">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Restaurant Registration</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <section class="success-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <div class="card">
+                        <div class="card-body customer-info">
+                            <h5>Restaurant Registration</h5>
+                            <hr>
+                            <form action="https://home/restaurant-request/save" method="post">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="restaurant_name" value=""
+                                        placeholder="Restaurant Name"
+                                        oninvalid="this.setCustomValidity('Enter Restaurant Name')"
+                                        oninput="this.setCustomValidity('')" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="owner_name" value=""
+                                        placeholder="Owner Name" oninvalid="this.setCustomValidity('Enter Owner Name')"
+                                        oninput="this.setCustomValidity('')" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" name="owner_phone" value=""
+                                        placeholder="Phone Number"
+                                        oninvalid="this.setCustomValidity('Enter Phone Number')"
+                                        oninput="this.setCustomValidity('')" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="owner_email" value=""
+                                        placeholder="Email Address"
+                                        oninvalid="this.setCustomValidity('Enter Email Address')"
+                                        oninput="this.setCustomValidity('')" required>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control" name="package_id"
+                                        oninvalid="this.setCustomValidity('Please Choose Any Package')"
+                                        oninput="this.setCustomValidity('')" required>
+                                        <option value="">Choose Package</option>
+                                        <option value="1">Starter</option>
+                                        <option value="3">Monthly</option>
+                                        <option value="4">Pilot Package</option>
+                                    </select>
+                                </div>
+                                <div class="form-group" id="delivery_address">
+                                    <textarea class="form-control" name="restaurant_address"
+                                        placeholder="Address Write Here.."></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-danger btn-block">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="/index.html"> <img src="/images/logo/logo1649837633.png" alt="" style="max-height: 90px">
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact &amp; Address</h5>
+                    <ul>
+                        <li>
+                            <i class="fas fa-address-book mr-2"></i>This is the address
+                        </li>
+                        <li>
+                            <i class="fas fa-phone mr-2"></i>123456
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope mr-2"></i>info@rwa.com
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Important Link</h5>
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link aboutsize" href="/home/about.html">About <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html#feature">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html#package">Packages</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/home/contact.html">Contact Us </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 ">
+                    <p>Copyright © 2023 <a href="/index.html">SnapBook</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <button class="top-btn"><i class="fas fa-angle-up"></i></button>
+
+    <script src="/js/all.js"></script>
+    <script src="/js/main.js"></script>
+
+</body>
+</html>
